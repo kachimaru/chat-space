@@ -18,6 +18,7 @@
 ### Association
 - has_many :comments
 - has_many :users_groups
+- has_many :users
 
 ## commentsテーブル
 |Column|Type|Options|
