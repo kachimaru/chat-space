@@ -1,5 +1,17 @@
 .chat-main{
   height: 100vh;
   width: calc(100vw - 300px);
-  background-color: white;
+  background-color: #ffffff;
+  .main-header{
+    height: 100px;
+    background-color: #ffffff;
+  }
+  .messages{
+    height: calc(100vh - 100px - 90px);
+    background-color: #fafafa;
+  }
+  .form{
+    height: 90px;
+    background-color: #d2d2d2;
+  }
 }
