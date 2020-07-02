@@ -1,7 +1,7 @@
 .chat-side{
   height: 100vh;
   width: 300px;
-  background-color: #253141;
+  background-color: #2f3e51;
   .side-header{
     height: 100px;
     background-color: #253141;
@@ -33,7 +33,7 @@
   }
   .groups{
     height: calc(100vh - 100px);
-    background-color: #2f3e51;
+    box-sizing: border-box;
     padding-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
