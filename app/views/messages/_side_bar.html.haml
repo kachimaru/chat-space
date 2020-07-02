@@ -1,3 +1,13 @@
 .chat-side
   .side-header
+    .side-header__box
+      .side-header__box__username
+        XXXXXX
+      .side-header__box__menu
+        %li.side-header__box__edit-user
+          =link_to "/" do
+            =icon('fas','edit')
+        %li.side-header__box__new-group
+          = link_to "/" do
+            =icon('fas','cog')
   .groups
