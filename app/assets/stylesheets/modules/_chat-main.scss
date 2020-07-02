@@ -5,6 +5,37 @@
   .main-header{
     height: 100px;
     background-color: #ffffff;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .group-info{
+      margin: 35px 0 15px 0;
+      font-size: 20px;
+      color: #333333;
+      &__people{
+        margin-top: 20px;
+        color: #999999;
+        font-size: 12px;
+        bottom: 0;
+      }
+    }
+    .edit-btn{
+      padding: 0 20px;
+      margin-top: 30px;
+      width: 72px;
+      font-size: 16px;
+      height: 40px;
+      line-height: 40px;
+      right: 40px;
+      border: solid 1px #38aef0;
+      cursor: pointer;
+      &__info{
+        color:#38aef0;
+        text-decoration: none;
+        list-style: none;
+      }
+    }
   }
   .messages{
     height: calc(100vh - 100px - 90px);
