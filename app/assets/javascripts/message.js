@@ -53,14 +53,10 @@ $(function(){
       contentType: false
     })
     .done(function(data){
-      // console.log(data);
       var insertHTML = buildHTML(data);
       $('.messages').append(insertHTML);
       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
       $('form')[0].reset();
-      // console.log(insertHTML);
-      //var msg='.message-list'
-      //message(insertHTML,msg);
     })
     .always(function(){
       $(".submit-btn").prop('disabled', false);
