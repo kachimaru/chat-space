@@ -1,0 +1,108 @@
+.chat-main{
+  height: 100vh;
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+  .main-header{
+    height: 100px;
+    background-color: #ffffff;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .group-info{
+      margin: 35px 0 15px 0;
+      font-size: 20px;
+      color: #333333;
+      &__people{
+        margin-top: 20px;
+        color: #999999;
+        font-size: 12px;
+        bottom: 0;
+      }
+    }
+    .edit-btn{
+      padding: 0 20px;
+      margin-top: 30px;
+      width: 72px;
+      font-size: 16px;
+      height: 40px;
+      line-height: 40px;
+      right: 40px;
+      border: solid 1px #38aef0;
+      cursor: pointer;
+      &__info{
+        color:#38aef0;
+        text-decoration: none;
+        list-style: none;
+      }
+    }
+  }
+  .messages{
+    height: calc(100vh - 100px - 90px);
+    background-color: #fafafa;
+    overflow: scroll;
+    .message{
+      padding-top: 35px;
+      padding-left: 40px;
+      .upper-message{
+        display: flex;
+        &__user-name{
+          color: #333333;
+          font-size: 16px;
+          margin-right: 10px;
+          margin-bottom: 12px;
+        }
+        &__date{
+          color: #999999;
+          font-size: 12px;
+        }
+      }
+      .lower-message{
+        color: #434a54;
+        font-size: 14px;
+        margin-bottom: 46px;
+      }
+    }
+  }
+  .form{
+    height: 90px;
+    background-color: #d2d2d2;
+    padding: 20px 40px;
+    form{
+      display: flex;
+      .form__box{
+        position: relative;
+        width: 100%;
+        &__message{
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+          color: black;
+          border-style: none;
+        }
+        &__image{
+          font-size: 1.3rem;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+          .icon{
+            display: inline-block;
+          }
+          .hidden{
+            display: none;
+          }
+        }
+      }
+      .submit-btn{
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        cursor: pointer;
+        }
+    }
+  }
+}
