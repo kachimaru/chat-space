@@ -2,45 +2,22 @@
   .main-header
     .group-info
       .group-info__name
-        test
+        = @group.name
       .group-info__people
         Member:
+        - @group.users.each do |user|
+          =user.name
     .edit-btn
-      =link_to "/",class:"edit-btn__info" do
+      =link_to edit_group_path(@group.id),class:"edit-btn__info" do
         Edit
   .messages
-    .message
-      .upper-message
-        .upper-message__user-name
-          username
-        .upper-message__date
-          2020/02/22(tes) 20:22:22
-      .lower-message
-        Message
-
-    .message
-      .upper-message
-        .upper-message__user-name
-          username
-        .upper-message__date
-          2020/02/22(tes) 20:22:22
-      .lower-message
-        Message
-
-    .message
-      .upper-message
-        .upper-message__user-name
-          username
-        .upper-message__date
-          2020/02/22(tes) 20:22:22
-      .lower-message
-        Message 
+    = render @messages
   
   .form
-    = form_tag  do
+    = form_for [@group, @message] do |f|
       .form__box
-        = text_field_tag :name,'',class: "form__box__message", placeholder:"Type a message"
-        = label_tag :name,'',class:"form__box__image" do
-          = icon('fas','image', class: 'icon')
-          = file_field_tag :image, class:"hidden"
-      =submit_tag 'Send',class:"submit-btn"
+        = f.text_field :content, class: "form__box__message", placeholder: "type a message"
+        = f.label :image, class: "form__box__image" do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: "hidden"
+      = f.submit 'Send', class: "submit-btn"
