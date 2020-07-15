@@ -67,7 +67,6 @@ $(function(){
   });
   var reloadMessages = function() {
     var last_message_id = $('.message:last').data("message-id");
-    console.log(last_message_id)
     $.ajax({
       url: "api/messages",
       type: 'get',
@@ -80,7 +79,6 @@ $(function(){
         var msg = '.messages';
         $.each(messages, function(i,message) {
           insertHTML += buildHTML(message)
-          console.log(message);
         });
         message(insertHTML,msg);
         $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
