@@ -65,6 +65,9 @@
       }
     }
   }
+  .messages::-webkit-scrollbar {
+    display: none;
+  }
   .form{
     height: 90px;
     background-color: #d2d2d2;
