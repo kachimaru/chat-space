@@ -41,7 +41,7 @@
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     overflow: scroll;
-    overflow-y:hidden;
+    //display: none;
     .message{
       padding-top: 35px;
       padding-left: 40px;
